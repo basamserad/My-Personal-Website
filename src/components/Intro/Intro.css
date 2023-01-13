@@ -1,0 +1,154 @@
+.hero {
+  height: 90vh;
+  position: relative;
+}
+.p_left {
+  margin-top: 9%;
+  padding-right: 20px;
+}
+.h_top {
+  margin-top: 10px;
+}
+.hero h3 {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: var(--color-primary);
+}
+.hero h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.hero_btn {
+  margin-top: 4%;
+}
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0 30px 0;
+}
+.hero_btn button {
+  margin-right: 30px;
+}
+.hero_btn i {
+  font-size: 20px;
+}
+
+.hero_btn button img {
+  width: 20px;
+  height: 20px;
+}
+.hero .left {
+  margin-right: 10%;
+}
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+.hero .right_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(28% 0, 100% 0, 100% 50%, 100% 100%, 26% 100%, 0% 50%);
+  object-fit: cover;
+}
+.hero img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(28% 0, 100% 0, 100% 50%, 100% 100%, 26% 100%, 0% 50%);
+  object-fit: cover;
+}
+@media screen and (max-width: 1260px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero h2 {
+    font-size: 27px;
+  }
+  .hero p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .hero .f_flex {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 34px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 10px;
+  }
+}
