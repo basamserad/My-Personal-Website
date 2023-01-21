@@ -1,21 +1,41 @@
-import { useState } from 'react';
-import './App.css';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Intro from './components/Intro/Intro';
+import styles from './style';
+import {
+  About,
+  EducationBG,
+  CardDeal,
+  Clients,
+  Footer,
+  Navbar,
+  ProgrammingLang,
+  Home,
+  Contact,
+} from './components';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Intro />
-      <About />
-      <Contact />
-      <Footer />
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
+      </div>
     </div>
-  );
-}
+
+    <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Home />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <About />
+        <EducationBG />
+        <ProgrammingLang />
+        <CardDeal />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
+  </div>
+);
 
 export default App;
