@@ -37,6 +37,9 @@ import email from './Email.svg';
 import github from './Github.svg';
 import logov1 from './Logo_v1.svg';
 import logov2 from './Logo_v2.svg';
+import mypic from './My Pic.jpg';
+import mypic2 from './My Pic_02.jpg';
+
 export {
   airbnb,
   bill,
@@ -77,4 +80,6 @@ export {
   github,
   logov1,
   logov2,
+  mypic,
+  mypic2,
 };

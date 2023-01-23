@@ -1,64 +1,22 @@
 import React from 'react';
-import { SiGmail } from 'react-icons/si';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsFacebook } from 'react-icons/bs';
 import { socialMedia } from '../constants';
 
 const Gmailbutton = ({ styles }) => {
   return (
-    <div className="flex flex-wrap my-6">
-      {socialMedia.map((social, index) => (
-        <button
-          type="button"
-          className={`py-4 mr-6 px-6 btnhover bg-blue-gradient rounded-[10px] outline-none ${styles}`}
-          onClick={() => window.open(social.link)}
-          key={social.id}
-        >
+    <div className="w-full flex justify-between items-center md:flex-row flex-col">
+      <div className="flex flex-row md:mt-0 mt-6">
+        {socialMedia.map((social, index) => (
           <img
+            key={social.id}
             src={social.icon}
             alt={social.id}
-            className='w-[21px] h-[21px] object-contain cursor-pointer'
+            className={`w-[28px] h-[28px] object-contain cursor-pointer ${
+              index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
+            }`}
+            onClick={() => window.open(social.link)}
           />
-        </button>
-      ))}
-
-      {/* <a
-        href="mailto:basamserad1223@gmail.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button
-          type="button"
-          className={`py-4 px-6 btnhover bg-blue-gradient rounded-[10px] outline-none ${styles}`}
-        >
-          <SiGmail />
-        </button>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/basam-serad-19599823a/"
-        target="_blank"
-        rel="noreferrer"
-        className="mx-6"
-      >
-        <button
-          type="button"
-          className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles}`}
-        >
-          <BsLinkedin />
-        </button>
-      </a>
-      <a
-        href="https://www.facebook.com/basam.serad.1998"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button
-          type="button"
-          className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles}`}
-        >
-          <BsFacebook />
-        </button>
-      </a> */}
+        ))}
+      </div>
     </div>
   );
 };

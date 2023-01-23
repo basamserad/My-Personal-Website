@@ -1,0 +1,12 @@
+.img_card {
+  height: 50vh;
+}
+.home_pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(28% 0, 100% 0, 100% 50%, 100% 100%, 26% 100%, 0% 50%);
+  object-fit: cover;
+}

@@ -1,14 +1,14 @@
-import { bill } from '../assets';
+import { bill, mypic2 } from '../assets';
 import styles, { layout } from '../style';
 import Button from './Button';
 
 const About = () => (
   <section id="about" className={layout.sectionReverse}>
-    <div className={layout.sectionImgReverse}>
+    <div className={`${layout.sectionImgReverse}`}>
       <img
-        src={bill}
-        alt="billing"
-        className="w-[100%] h-[100%] relative z-[5]"
+        src={mypic2}
+        alt="mypic2"
+        className="max-w-[430px] w-[100%] h-[100%] relative z-[5]"
       />
 
       {/* gradient start */}
@@ -31,7 +31,6 @@ const About = () => (
       </div>
     </div>
   </section>
-  
 );
 
 export default About;

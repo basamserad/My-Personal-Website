@@ -1,7 +1,7 @@
 import styles from '../style';
-import { discount, robot } from '../assets';
-import GetStarted from './GetStarted';
+import { discount, robot, mypic } from '../assets';
 import { Typewriter } from 'react-simple-typewriter';
+import '../css/Home.css';
 
 import Gmailbutton from './Gmailbutton';
 
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${styles.paddingHomeY}`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
@@ -55,8 +55,8 @@ const Home = () => {
           find examples of my work and my contact information. Thank you for
           visiting!
         </p>
-       <div className="md:invisible hidden">
-          <h1 className="font-poppins font-semibold text-[20px] text-white w-full">
+        <div className="md:flex flex-col hidden py-28">
+          <h1 className="text-gradient font-poppins font-semibold text-[23px] text-white pb-8">
             Find Me With
           </h1>
           <Gmailbutton />
@@ -64,12 +64,12 @@ const Home = () => {
       </div>
 
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative h-[90%]`}
       >
         <img
-          src={robot}
-          alt="billing"
-          className="w-[100%] h-[100%] relative z-[5]"
+          src={mypic}
+          alt="mypic"
+          className="w-[100%] h-[100%] relative z-[5] home_pic"
         />
 
         {/* gradient start */}
@@ -79,7 +79,7 @@ const Home = () => {
         {/* gradient end */}
       </div>
 
-      <div className={`ss:hidden flex flex-col ${styles.flexCenter}`}>
+      <div className="md:hidden flex flex-col justify-center items-center">
         <h1 className="font-poppins font-semibold text-[20px] text-white">
           Find Me With
         </h1>
