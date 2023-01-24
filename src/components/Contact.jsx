@@ -9,7 +9,7 @@ import { AiOutlineSend } from 'react-icons/ai';
 const Contact = () => {
   const formRef = useRef();
   const [data, setData] = useState({
-    username: '',
+    name: '',
     email: '',
     subject: '',
     message: '',
@@ -66,19 +66,41 @@ const Contact = () => {
       >
         <div className="flex-1 flex flex-col">
           <h2 className={`${styles.heading2}`}>Contact Me With!</h2>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form ref={formRef} onSubmit={formSubmit} className="mt-8 space-y-6">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm">
               <div>
-                <label htmlFor="email-address" className="sr-only">
+                <label htmlFor="name" className="sr-only">
+                  Full Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  value={data.name}
+                  onChange={InputEvent}
+                  required
+                  autoComplete="email"
+                  type="text"
+                  className="appearance-none rounded-none relative block
+                  w-full px-3 py-2 border border-gray-300
+                  placeholder-gray-500 text-gray-900 rounded-t-md
+                  focus:outline-none focus:ring-indigo-500
+                  focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div className="my-5">
+                <label htmlFor="email" className="sr-only">
                   Email address
                 </label>
                 <input
-                  id="email-address"
+                  id="email"
                   name="email"
-                  type="email"
-                  autoComplete="email"
+                  value={data.email}
+                  onChange={InputEvent}
                   required
+                  autoComplete="email"
+                  type="email"
                   className="appearance-none rounded-none relative block
                   w-full px-3 py-2 border border-gray-300
                   placeholder-gray-500 text-gray-900 rounded-t-md
@@ -92,9 +114,11 @@ const Contact = () => {
                   Subject
                 </label>
                 <input
-                  id="subject"
+                  type="text"
                   name="subject"
-                  type="subject"
+                  value={data.subject}
+                  onChange={InputEvent}
+                  required
                   className="appearance-none rounded-none relative block
                   w-full px-3 py-2 border border-gray-300
                   placeholder-gray-500 text-gray-900 rounded-b-md
@@ -110,6 +134,9 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
+                  value={data.message}
+                  onChange={InputEvent}
+                  required
                   type="message"
                   rows="8"
                   className="appearance-none rounded-none relative block
@@ -130,10 +157,7 @@ const Contact = () => {
                 rounded-md text-white bg-blue-gradient"
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                  <AiOutlineSend
-                    className="h-5 w-5"
-                    aria-hidden="true"
-                  />
+                  <AiOutlineSend className="h-5 w-5" aria-hidden="true" />
                 </span>
                 Send Message
               </button>
@@ -144,8 +168,8 @@ const Contact = () => {
               <span>YOUR NAME</span>
               <input
                 type="text"
-                name="username"
-                value={data.username}
+                name="email"
+                value={data.email}
                 onChange={InputEvent}
                 required
               />
