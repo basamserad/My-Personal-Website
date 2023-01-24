@@ -1,5 +1,5 @@
 import styles from '../style';
-import { discount, robot, mypic } from '../assets';
+import { discount, mypic } from '../assets';
 import { Typewriter } from 'react-simple-typewriter';
 import '../css/Home.css';
 

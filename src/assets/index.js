@@ -39,6 +39,7 @@ import logov1 from './Logo_v1.svg';
 import logov2 from './Logo_v2.svg';
 import mypic from './My Pic.jpg';
 import mypic2 from './My Pic_02.jpg';
+import resume from './Serad, Basam C. Resume.pdf';
 
 export {
   airbnb,
@@ -82,4 +83,5 @@ export {
   logov2,
   mypic,
   mypic2,
+  resume
 };

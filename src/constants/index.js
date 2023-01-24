@@ -22,8 +22,6 @@ import {
   email,
   github,
 } from '../assets';
-import { AiFillGithub } from 'react-icons/ai';
-import { AiOutlineMail } from 'react-icons/ai';
 
 export const navLinks = [
   {
@@ -33,10 +31,6 @@ export const navLinks = [
   {
     id: 'about',
     title: 'About Me',
-  },
-  {
-    id: 'product',
-    title: 'Product',
   },
   {
     id: 'contact',
