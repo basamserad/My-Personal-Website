@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react';
 import styles from '../style';
-import Button from './Button';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineSend } from 'react-icons/ai';
-
+import { facebook, linkedin, email } from '../assets';
 const Contact = () => {
   const formRef = useRef();
   const [data, setData] = useState({
@@ -163,61 +162,43 @@ const Contact = () => {
               </button>
             </div>
           </form>
-          {/* <form ref={formRef} onSubmit={formSubmit}>
-            <div className="input">
-              <span>YOUR NAME</span>
-              <input
-                type="text"
-                name="email"
-                value={data.email}
-                onChange={InputEvent}
-                required
-              />
-            </div>
-            <div className="input">
-              <span>EMAIL </span>
-              <input
-                type="email"
-                name="email"
-                value={data.email}
-                onChange={InputEvent}
-                required
-              />
-            </div>
-            <div className="input">
-              <span>SUBJECT </span>
-              <input
-                type="text"
-                name="subject"
-                value={data.subject}
-                onChange={InputEvent}
-                required
-              />
-            </div>
-            <div className="input">
-              <span>YOUR MESSAGE </span>
-              <textarea
-                cols="30"
-                rows="10"
-                name="message"
-                value={data.message}
-                onChange={InputEvent}
-                required
-              />
-            </div>
-            <button type="submit" className="btn_shadow">
-              Send Message
-              <i>
-                <AiOutlineSend />
-              </i>
-            </button>
-          </form> */}
         </div>
 
-        <div
-          className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 flex-1 flex flex-col`}
-        >
-          <Button />
+        <div className="sm:ml-10 ml-10 sm:mt-0 hidden flex-1 md:flex flex-col">
+          <h2 className={`${styles.heading2}`}>Contact Information</h2>
+          <p className="text-white">
+            I'm open for any suggestion or job offer. Feel free to contact me.
+          </p>
+          <div className="pl-3 mt-5 space-y-6">
+            <span className="flex flex-row justify-start text-white">
+              <img
+                src={facebook}
+                className="w-[21px] h-[21px] object-contain mr-2"
+              />
+              Facebook:
+              <p className="text-black ml-2">
+                https://www.facebook.com/basam.serad.1998
+              </p>
+            </span>
+            <span className="flex flex-row justify-start text-white">
+              <img
+                src={email}
+                className="w-[21px] h-[21px] object-contain mr-2"
+              />
+              Email:
+              <p className="text-black ml-2"> basamserad1223@gmail.com </p>
+            </span>
+            <span className="flex flex-row justify-start text-white">
+              <img
+                src={linkedin}
+                className="w-[21px] h-[21px] object-contain mr-2"
+              />
+              linkedin:
+              <p className="text-black ml-2">
+                https://www.linkedin.com/in/basam-serad-19599823a/
+              </p>
+            </span>
+          </div>
         </div>
         <ToastContainer />
       </section>
