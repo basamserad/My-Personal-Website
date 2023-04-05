@@ -1,5 +1,7 @@
 import React from 'react';
-
-export default function About() {
+import { SectionWrapper } from '../hoc';
+const About = () => {
   return <div>About</div>;
-}
+};
+
+export default SectionWrapper(About, 'about');
