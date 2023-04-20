@@ -4,6 +4,7 @@ import {
   Contact,
   Experience,
   Feedbacks,
+  Education,
   Hero,
   Navbar,
   Tech,
@@ -20,6 +21,7 @@ export default function App() {
             <Hero />
           </div>
           <About/>
+          <Education/>
           <Experience/>
           <Tech/>
           {/* <Works/>
