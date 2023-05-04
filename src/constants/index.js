@@ -112,12 +112,12 @@ const educations = [
   {
     title: 'Ibn Siena Integrated School',
     year_level: 'Secondary Level',
-    year: '2007-2013',
+    year: '2013-2018',
   },
   {
     title: 'Mindanao State University',
     year_level: 'College',
-    year: '2007-2013',
+    year: '2018-2023',
   },
 ];
 
