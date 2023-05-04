@@ -1,7 +1,5 @@
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -10,7 +8,7 @@ import {
   reactjs,
   nodejs,
   git,
-  starbucks,
+  postgress,
   carrent,
   jobit,
   tripguide,
@@ -89,6 +87,10 @@ const technologies = [
   {
     name: 'Go Lang',
     icon: golang,
+  },
+  {
+    name: 'PostgresSQl',
+    icon: postgress,
   },
 ];
 

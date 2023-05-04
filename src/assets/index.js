@@ -24,6 +24,7 @@ import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 import newstar from './newstar.webp';
+import postgress from './postgress.png';
 
 export {
   newstar,
@@ -52,4 +53,5 @@ export {
   nestjs,
   mysql,
   golang,
+  postgress,
 };
