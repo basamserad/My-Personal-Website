@@ -6,7 +6,6 @@ import web from './web.png';
 import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
-
 import css from './tech/css.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
@@ -17,17 +16,17 @@ import typescript from './tech/typescript.png';
 import nestjs from './tech/nestjs.svg';
 import golang from './tech/go lang.svg';
 import mysql from './tech/mysql.svg';
-
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
 import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
-
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import newstar from './newstar.webp';
 
 export {
+  newstar,
   logo,
   backend,
   creator,

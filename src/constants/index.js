@@ -17,6 +17,7 @@ import {
   nestjs,
   golang,
   mysql,
+  newstar,
 } from '../assets';
 
 export const navLinks = [
@@ -95,7 +96,7 @@ const experiences = [
   {
     title: 'React.js Developer',
     company_name: 'Newstar',
-    icon: starbucks,
+    icon: newstar,
     iconBg: '#383E56',
     date: 'March 2023 - Present',
     points: ['Backend Developer using Go Lang.'],
