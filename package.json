@@ -1,5 +1,5 @@
 {
-  "name": "esportfolio",
+  "name": "sam",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -27,5 +27,9 @@
     "eslint-config-next": "13.4.3",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "author": "Basam C. Serad",
+  "license": "ISC"
 }

@@ -6,18 +6,18 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          // <FaHtml5 />,
+          // <FaCss3 />,
+          // <FaJs />,
+          // <FaReact />,
+          // <SiNextdotjs />,
+          // <SiFramer />,
+          // <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
@@ -68,10 +68,10 @@ const aboutData = [
       },
     ],
   },
-];
+]
 
 const About = () => {
-  return <div>About</div>;
-};
+  return <div>About</div>
+}
 
-export default About;
+export default About
